@@ -3,11 +3,10 @@ def time_elapsed(parallel_lists, id, time):
     for i, element in enumerate(id_array):
         if element == id:
             out = out_array[i]
-            return time - out
+            return round(time - out, 2)
         elif element == 'ZZZ':
             print('ID not found.')
-            
-    
+
 
 ids = ['ABC',  'DFK', 'XYY']
 out = [9.55, 10.11, 10.23, 0]
